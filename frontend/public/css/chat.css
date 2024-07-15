@@ -1,0 +1,44 @@
+.messages-container {
+    height: max-content;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-width: 400px;
+}
+
+.messages {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.message {
+    width: fit-content;
+    max-width: 45%;
+    min-width: 0;
+    min-height: fit-content;
+    font-size: 18px;
+    color: #2d3142;
+    padding: 2px;
+    background-color: #7eb09b;
+    border-radius: 15px 15px 15px 3px;
+    overflow: hidden;
+    word-break: break-all;
+    margin-bottom: 4px;
+}
+
+.message.js-mine {
+    align-self: flex-end;
+    background-color: #80ff72;
+    border-radius: 15px 15px 3px 15px;
+}
+
+.message__content {
+    margin: 5px 10px 5px 10px;
+}

@@ -1,0 +1,42 @@
+services:
+    frontend:
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        env_file: .env
+        ports:
+            - ${PORT:-3000}:3000
+        develop:
+            watch:
+                - action: sync
+                  path: ./frontend
+                  target: /app
+                - action: rebuild
+                  path: package.json
+    backend:
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        env_file: .env
+        ports:
+            - 8080:8080
+        develop:
+            watch:
+                - action: sync
+                  path: ./backend
+                  target: /app
+                - action: rebuild
+                  path: package.json
+        depends_on:
+            - mongo
+        tty: true
+
+    mongo:
+        image: mongo
+        restart: always
+        environment:
+            MONGO_INITDB_ROOT_USERNAME: test
+            MONGO_INITDB_ROOT_PASSWORD: example
+        attach: false
+        ports:
+            - 27017:27017

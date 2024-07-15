@@ -1,0 +1,53 @@
+.conversations_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conversations {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+.conversation {
+    background: #2d3142;
+    border: 2px solid #101118;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.conversation:hover,
+.conversation:active {
+    background: #101118;
+}
+
+.conversation__username {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f7ebec;
+}
+
+.conversation__message {
+    color: #a39a9b;
+}
+
+.conversation__message-content {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conversation__message-timestamp {
+    font-weight: 300;
+    font-size: 12px;
+    float: right;
+    margin-top: 5px;
+}
