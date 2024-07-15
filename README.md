@@ -7,18 +7,23 @@ Try it out: [messagelink.calvindobbs.com](https://messagelink.calvindobbs.com)
 ## Usage
 
 Click "Sign up" and make an account:
+
 <img src="/README/signup.png" alt="A sign in screen allowing the user to enter a username, email, and password" height="500" />
 
 Or "Log in":
+
 <img src="/README/login.png" alt="A log in screen allowing the user to enter an email and password" height="500" />
 
 Add a contact by their username and press chat:
+
 <img src="/README/contacts.png" alt="List of contacts on the contacts screen" height="500" />
 
 Chat in real time:
+
 <img src="/README/chat.png" alt="A real time conversation through message bubbles" height="500" />
 
 View your active conversations:
+
 <img src="/README/conversations.png" alt="A list of active conversations with recent message previews" height="500" />
 
 ## Setup Instructions
